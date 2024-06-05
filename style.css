@@ -1,0 +1,45 @@
+.container {
+    width: 600px;
+    height: 600px;
+    position: relative;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background-color: red;
+    animation: mmove 5s infinite;
+}
+
+@keyframes mmove {
+    0% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+
+    25% {
+        top: 0;
+        left: 550px;
+        background-color: blue;
+    }
+
+    50% {
+        top: 550px;
+        left: 550px;
+        background-color: green;
+    }
+
+    75% {
+        top: 550px;
+        left: 0;
+        background-color: yellow;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+}
